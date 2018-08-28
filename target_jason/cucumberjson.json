@@ -1,0 +1,332 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Test login with Valid credientials",
+        "description": "",
+        "id": "login-platform-smoke-test;test-login-with-valid-credientials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5817796614,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Open the ChromeBrowser and start Platform",
+            "match": {
+              "location": "LoginSmokeTest.open_the_ChromeBrowser_and_start_Platform()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 186566673,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter \"Host\" and \"dnnhost\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Host",
+                  "offset": 9
+                },
+                {
+                  "val": "dnnhost",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginSmokeTest.i_enter_Username_and_Password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 693067677,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click Login button",
+            "match": {
+              "location": "LoginSmokeTest.click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684814051,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Check User able to loginName to Platform or not \"SuperUser Account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SuperUser Account",
+                  "offset": 49
+                }
+              ],
+              "location": "LoginSmokeTest.check_User_able_to_loginName_to_Platform_or_not(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Test login with InValid credientials",
+        "description": "",
+        "id": "login-platform-smoke-test;test-login-with-invalid-credientials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4993786790,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Open the ChromeBrowser and start Platform",
+            "match": {
+              "location": "LoginSmokeTest.open_the_ChromeBrowser_and_start_Platform()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 344608581,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter \"InvalidUser\" and \"InValidPass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InvalidUser",
+                  "offset": 9
+                },
+                {
+                  "val": "InValidPass",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSmokeTest.i_enter_Username_and_Password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 312587190,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "click Login button",
+            "match": {
+              "location": "LoginSmokeTest.click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 674700240,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Check User able to loginName to Platform or not \"InvalidUser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "InvalidUser",
+                  "offset": 49
+                }
+              ],
+              "location": "LoginSmokeTest.check_User_able_to_loginName_to_Platform_or_not(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Test Error message and take a Screenshot",
+        "description": "",
+        "id": "login-platform-smoke-test;test-error-message-and-take-a-screenshot",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4381252315,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Open the ChromeBrowser and start Platform",
+            "match": {
+              "location": "LoginSmokeTest.open_the_ChromeBrowser_and_start_Platform()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166118587,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I enter \"host\" and \"dnnhost\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "host",
+                  "offset": 9
+                },
+                {
+                  "val": "dnnhost",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginSmokeTest.i_enter_Username_and_Password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 649816198,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "click Login button",
+            "match": {
+              "location": "LoginSmokeTest.click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 543789294,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Check error message and capture screenshot \"tag3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tag3",
+                  "offset": 44
+                }
+              ],
+              "location": "LoginSmokeTest.check_error_message_and_capture_screenshot(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@tag3"
+          }
+        ]
+      }
+    ],
+    "name": "Login Platform smoke test",
+    "description": "",
+    "id": "login-platform-smoke-test",
+    "keyword": "Feature",
+    "uri": "MyApplicatio.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]

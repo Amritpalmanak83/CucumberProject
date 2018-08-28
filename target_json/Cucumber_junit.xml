@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="19.448904">
+<testcase classname="Login Platform smoke test" name="Test login with Valid credientials" time="7.382245">
+<system-out><![CDATA[Given Open the ChromeBrowser and start Platform.............................passed
+When I enter "Host" and "dnnhost"...........................................passed
+And click Login button......................................................passed
+Then Check User able to loginName to Platform or not "SuperUser Account"....passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Platform smoke test" name="Test login with InValid credientials" time="6.325683">
+<system-out><![CDATA[Given Open the ChromeBrowser and start Platform.............................passed
+When I enter "InvalidUser" and "InValidPass"................................passed
+And click Login button......................................................passed
+Then Check User able to loginName to Platform or not "InvalidUser"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Platform smoke test" name="Test Error message and take a Screenshot" time="5.740976">
+<system-out><![CDATA[Given Open the ChromeBrowser and start Platform.............................passed
+When I enter "host" and "dnnhost"...........................................passed
+And click Login button......................................................passed
+Then Check error message and capture screenshot "tag3"......................passed
+]]></system-out>
+</testcase>
+</testsuite>
